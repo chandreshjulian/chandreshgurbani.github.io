@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chandresh Gurbani's Resume</title>
   <style>
     body {
@@ -118,11 +119,82 @@
     .container.dark-mode .exp-skill-section div {
       background: #333;
     }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .container {
+        width: 90% !important;
+        ;
+        padding: 15px;
+      }
+
+      .theme-toggle {
+        padding: 8px;
+        top: 8px;
+        right: 8px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      h3 {
+        font-size: 1.2em;
+      }
+
+      p,
+      ul {
+        font-size: 0.9em;
+      }
+
+      .exp-skill-section {
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        width: 95% !important;
+        padding: 10px;
+      }
+
+      .theme-toggle {
+        padding: 6px;
+        top: 6px;
+        right: 6px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      h3 {
+        font-size: 1em;
+      }
+
+      p,
+      ul {
+        font-size: 0.8em;
+      }
+
+      .exp-skill-section {
+        gap: 10px;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <button class="theme-toggle" onclick="toggleTheme()">Switch to Dark Mode</button>
+  <button class="theme-toggle" onclick="toggleTheme()">Switch to Dark
+    Mode</button>
 
   <div class="container">
     <h1>Chandresh Gurbani</h1>
